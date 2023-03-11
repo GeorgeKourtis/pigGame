@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <p class="wins0">WINS:</p>
+        <p class="wins wins--player0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="wins1">WINS:</p>
+        <p class="wins wins--player1">0</p>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="img/dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--instructions">ℹ info</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <div class="instructions show">
+        <button class="close--instructions">&times;</button>
+        <h1 class="instructions--text">Instructions</h1>
+        <h3 class="objective">Your objective is to reach 100 points first</h3>
+        <p class="rules">
+          We begin with player 1.You roll the dice and see what you rolled.You
+          can store your points by pressing Hold,store your points and finish
+          your turn. If you roll 1 you lose all of your current points and your
+          turn.
+        </p>
+      </div>
+      <div class="overlay show"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
